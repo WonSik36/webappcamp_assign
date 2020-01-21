@@ -53,4 +53,14 @@ Interface, Class 작성
 ### 10.게시판 목록 구현, 11.게시판 글쓰기 구현, 12.게시판 글읽기 구현, 13.게시판 글수정/삭제 구현
 * Controller 작성
 * JSP 파일 작성
-	
+
+### login, logout 기능 구현
+https://github.com/WonSik36/webappcamp_assign/blob/master/src/main/java/com/handong/dto/UserDto.java
+https://github.com/WonSik36/webappcamp_assign/blob/master/src/main/java/com/handong/mapper/UserMapper.java
+https://github.com/WonSik36/webappcamp_assign/blob/master/src/main/java/com/handong/service/UserService.java
+https://github.com/WonSik36/webappcamp_assign/blob/master/src/main/java/com/handong/service/UserServiceImpl.java
+https://github.com/WonSik36/webappcamp_assign/blob/master/src/main/java/com/handong/util/AuthenticationInterceptor.java
+https://github.com/WonSik36/webappcamp_assign/blob/master/src/main/resources/mappers/user-mapper.xml
+https://github.com/WonSik36/webappcamp_assign/blob/master/src/main/webapp/WEB-INF/spring/root-context.xml
+https://github.com/WonSik36/webappcamp_assign/blob/master/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml
+https://github.com/WonSik36/webappcamp_assign/blob/master/src/main/webapp/WEB-INF/views/loginform.jsp
