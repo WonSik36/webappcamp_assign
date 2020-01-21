@@ -9,6 +9,9 @@
 <title>게시판</title>
 </head>
 <body>
+	<c:if test="${not empty login}">
+		<h3>안녕하세요 ${login.userID} 님 </h3>
+	</c:if>
 	<table border="1" width="880">
 		<tr>
 			<td width="77">
@@ -49,5 +52,7 @@
 		</c:forEach>
 	</table>
 	<a href="register">글쓰기</a>
+	<a href="login">로그인</a>
+	<a href="logout">로그아웃</a>
 </body>
 </html>

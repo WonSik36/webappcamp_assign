@@ -23,6 +23,17 @@
 	
 	<context:component-scan base-package="com.handong.controller" />
 	
+	<!-- Authentication Interceptor -->
+	<beans:bean id="authenticationInterceptor" class="com.handong.util.AuthenticationInterceptor"/>
 	
+	<!-- configuration of interceptor -->
+	<interceptors>
+		<interceptor>
+			<mapping path="/register"/>
+			<mapping path="/modify"/>
+			<mapping path="/remove"/>
+			<beans:ref bean="authenticationInterceptor"/>
+		</interceptor>
+	</interceptors>
 	
 </beans:beans>
